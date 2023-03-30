@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.vegan.ui.home.meal_dialog.MealDialogFragment;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -33,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                MealDialogFragment dialogFragment = new MealDialogFragment();
+                dialogFragment.show(getSupportFragmentManager(), "'dialogFragment'");
             }
         });
         DrawerLayout drawer = binding.drawerLayout;

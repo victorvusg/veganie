@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/isManualInput"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        android:textSize="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onChangeManualInput"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Manual Input"
+        android:textColor="@color/design_default_color_primary" />
+    <!--        android:layout_weight="50"-->
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout2"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:weightSum="100"-->
+<!--        android:orientation="horizontal">-->
+<!--        <EditText-->
+<!--            android:id="@+id/username"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Your meal"-->
+<!--            android:autofillHints=""-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="50"-->
+<!--            />-->
+<!--        <Spinner-->
+<!--            android:id="@+id/favorite_meal_spinner"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="50"-->
+<!--            android:layout_width="0dp"-->
+<!--            />-->
+<!--        <include layout="@layout/favorite_meal_spinner" />-->
+<!--    </LinearLayout>-->
+</LinearLayout>
